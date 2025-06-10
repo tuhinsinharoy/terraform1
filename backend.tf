@@ -1,7 +1,8 @@
 terraform {
   backend "azurerm" {
-      resource_group_name  = "tfstate"
-      storage_account_name = "<storage_account_name>"
+      subscription_id      = "60a70ac3-48fa-475f-9544-2b8180fcc736" 
+      resource_group_name  = "demo-rg2"
+      storage_account_name = "storage52072735"
       container_name       = "tfstate"
       key                  = "terraform.tfstate"
   }
